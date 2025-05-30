@@ -149,7 +149,7 @@ public class Qes1_13 {
 		String name8 = "鈴木一郎";
 		System.out.println("始めまして" + name8 + "です");//初めまして鈴木一郎です
 
-		byte age8 = (24);
+		int age8 = (24);
 		System.out.println("年齢は" + age8 + "歳です");//年齢は24歳です
 
 		double height8 = 168.5;
@@ -174,17 +174,17 @@ public class Qes1_13 {
 		**********************************************************************************/
 		System.out.println("始めまして" + name8 + "です"); //通常
 
-		int age9 = age8 + age8; //24+24=48歳
-		System.out.println("年齢は" + (age9) + "歳です");
+		age8 += age8; //自己代入できてない修正(age9=age8+age8)
+		System.out.println("年齢は" + (age8) + "歳です");
 
-		double height9 = height8 + height8; //168.5+168.5=337.0cm
-		System.out.println("身長は" + (height9) + "cmです");
+		height8 += height8; //自己代入× 修正 (height9 = height8 + height8)
+		System.out.println("身長は" + (height8) + "cmです");
 
-		double weight9 = weight8 + weight8; //64.2+64.2=128.4kg
-		System.out.println("体重は" + (weight9) + "kgです");
+		weight8 += weight8; ////自己代入× 修正(weight9 = weight8 + weight8)
+		System.out.println("体重は" + (weight8) + "kgです");
 
 		String Omu = ("オムライス");
-		System.out.println("好きな食べ物は" + Omu + "です"); //オムライス
+		System.out.println("好きな食べ物は" + Omu + "です");
 
 		double HEIGHT = 168.5 / 100; //cm→mmに変更
 		double BMI = (weight8 / (HEIGHT * HEIGHT)); //BMI ＝ 体重kg ÷ (身長m)2乗
@@ -202,7 +202,7 @@ public class Qes1_13 {
 		//int型をString型に変換
 		String stringAge = String.valueOf(age8);
 		String stringHeight = String.valueOf(height8);
-		String strringWeight = String.valueOf(weight8);
+		String stringWeight = String.valueOf(weight8);
 
 		//繋げて出力
 		System.out.println("年齢: " + age8 + "歳" + "身長: " + height8 + "cm" + "体重: " + weight + "kg");
