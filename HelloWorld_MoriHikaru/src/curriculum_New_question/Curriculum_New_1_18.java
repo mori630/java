@@ -3,10 +3,8 @@ package curriculum_New_question;
 public class Curriculum_New_1_18 {
 
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
-	public static void hello() {
-		String msg = "Hello JavaSE";
-		int num = 11;
-		System.out.println(msg + num);
+	public static void hello(String greeting, String word, int integer) {
+		System.out.println(greeting + "" + word + "" + "" + integer);
 	}
 
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
@@ -23,7 +21,7 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
-	public static void decimaru(double a, double b) {
+	public static void wa(double a, double b) {
 		double sum = a + b;
 		System.out.println(sum);
 	}
@@ -68,10 +66,10 @@ public class Curriculum_New_1_18 {
 
 	public static void main(String[] args) {
 		// 作成したメソッドをここで呼び出してください
-		hello();
+		hello("Hello", "JavaSE", 11);
 		wa(6, 3);
 		array(new int[] { 1, 2, 3, 4, });
-		decimaru(6.1, 6.2);
+		wa(6.1, 6.2);
 		int[] num = generaterRandomNum(5);
 		double avg = printAvg(num);
 		isAvg50(avg);
