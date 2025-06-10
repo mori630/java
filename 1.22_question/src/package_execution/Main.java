@@ -1,6 +1,6 @@
 package package_execution;
 
-import process.Sushi;
+import process.Sushi; //パッケージクラスの呼び出し
 
 public class Main {
 	public static void main(String[] args) {
