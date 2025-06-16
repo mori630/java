@@ -6,9 +6,9 @@ public class Person {
 	public double height;
 	public double weight;
 
-	static int count = 0;//問題1：クラスフィールド「count」を定義してください（初期値：0,データ型：int）
+	public static int count = 0;//問題1：クラスフィールド「count」を定義してください（初期値：0,データ型：int）
 
-	Person(String name, int age, double height, double weight) {
+	public Person(String name, int age, double height, double weight) {
 		this.name = name;
 		this.age = age;
 		this.height = height;
